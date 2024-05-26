@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15A31402BFF58AD0033AC49 /* ScreenNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A313F2BFF58AD0033AC49 /* ScreenNavigator.swift */; };
 		C199CEB12BFDCAAD00A4F491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CEB02BFDCAAD00A4F491 /* AppDelegate.swift */; };
 		C199CEB32BFDCAAD00A4F491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */; };
-		C199CEB52BFDCAAD00A4F491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CEB42BFDCAAD00A4F491 /* ViewController.swift */; };
-		C199CEB82BFDCAAD00A4F491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C199CEB62BFDCAAD00A4F491 /* Main.storyboard */; };
 		C199CEBA2BFDCAAF00A4F491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C199CEB92BFDCAAF00A4F491 /* Assets.xcassets */; };
 		C199CEBD2BFDCAAF00A4F491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C199CEBB2BFDCAAF00A4F491 /* LaunchScreen.storyboard */; };
+		C19C57BB2BFDCF8700A76B80 /* AuthModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57B62BFDCF8700A76B80 /* AuthModuleContract.swift */; };
+		C19C57BC2BFDCF8700A76B80 /* AuthModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57B72BFDCF8700A76B80 /* AuthModulePresenter.swift */; };
+		C19C57BD2BFDCF8700A76B80 /* AuthModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57B82BFDCF8700A76B80 /* AuthModuleRouter.swift */; };
+		C19C57BF2BFDCF8700A76B80 /* AuthModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57BA2BFDCF8700A76B80 /* AuthModuleInteractor.swift */; };
+		C19C57C92BFDEF8200A76B80 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57C72BFDEF8200A76B80 /* AuthViewController.swift */; };
+		C19C57CA2BFDEF8200A76B80 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19C57C82BFDEF8200A76B80 /* AuthViewController.xib */; };
+		C19C57CD2BFDF02200A76B80 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57CC2BFDF02200A76B80 /* UserModel.swift */; };
+		C19C57D02BFDF8DB00A76B80 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57CF2BFDF8DB00A76B80 /* NetworkManager.swift */; };
+		C19C57D22BFDFA5300A76B80 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D12BFDFA5300A76B80 /* NetworkService.swift */; };
+		C19C57D42BFDFC9B00A76B80 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D32BFDFC9B00A76B80 /* AuthService.swift */; };
+		F48E6E481B1720D17981E00A /* Pods_EDCR_Supervisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEB85F8A34FB651D8E63F28 /* Pods_EDCR_Supervisor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		406CCC0A995413FEB57E2B43 /* Pods-EDCR Supervisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDCR Supervisor.release.xcconfig"; path = "Target Support Files/Pods-EDCR Supervisor/Pods-EDCR Supervisor.release.xcconfig"; sourceTree = "<group>"; };
+		5DEB85F8A34FB651D8E63F28 /* Pods_EDCR_Supervisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDCR_Supervisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA06F9B7A5B7C62B9030DFC /* Pods-EDCR Supervisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDCR Supervisor.debug.xcconfig"; path = "Target Support Files/Pods-EDCR Supervisor/Pods-EDCR Supervisor.debug.xcconfig"; sourceTree = "<group>"; };
+		C15A313F2BFF58AD0033AC49 /* ScreenNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenNavigator.swift; sourceTree = "<group>"; };
 		C199CEAD2BFDCAAD00A4F491 /* EDCR Supervisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EDCR Supervisor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C199CEB02BFDCAAD00A4F491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C199CEB42BFDCAAD00A4F491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C199CEB72BFDCAAD00A4F491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C199CEB92BFDCAAF00A4F491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C199CEBC2BFDCAAF00A4F491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C199CEBE2BFDCAAF00A4F491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19C57B62BFDCF8700A76B80 /* AuthModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleContract.swift; sourceTree = "<group>"; };
+		C19C57B72BFDCF8700A76B80 /* AuthModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModulePresenter.swift; sourceTree = "<group>"; };
+		C19C57B82BFDCF8700A76B80 /* AuthModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleRouter.swift; sourceTree = "<group>"; };
+		C19C57BA2BFDCF8700A76B80 /* AuthModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleInteractor.swift; sourceTree = "<group>"; };
+		C19C57C72BFDEF8200A76B80 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		C19C57C82BFDEF8200A76B80 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		C19C57CC2BFDF02200A76B80 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C19C57CF2BFDF8DB00A76B80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C19C57D12BFDFA5300A76B80 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C19C57D32BFDFC9B00A76B80 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48E6E481B1720D17981E00A /* Pods_EDCR_Supervisor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0415A5D0CCBA68556F8464A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AA06F9B7A5B7C62B9030DFC /* Pods-EDCR Supervisor.debug.xcconfig */,
+				406CCC0A995413FEB57E2B43 /* Pods-EDCR Supervisor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5A971C9F0C559CD4C732B28F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB85F8A34FB651D8E63F28 /* Pods_EDCR_Supervisor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C134FA2F2C02EFC5001D8A69 /* app-configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C199CEB02BFDCAAD00A4F491 /* AppDelegate.swift */,
+				C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */,
+			);
+			path = "app-configuration";
+			sourceTree = "<group>";
+		};
 		C199CEA42BFDCAAD00A4F491 = {
 			isa = PBXGroup;
 			children = (
 				C199CEAF2BFDCAAD00A4F491 /* EDCR Supervisor */,
 				C199CEAE2BFDCAAD00A4F491 /* Products */,
+				0415A5D0CCBA68556F8464A3 /* Pods */,
+				5A971C9F0C559CD4C732B28F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +107,87 @@
 		C199CEAF2BFDCAAD00A4F491 /* EDCR Supervisor */ = {
 			isa = PBXGroup;
 			children = (
-				C199CEB02BFDCAAD00A4F491 /* AppDelegate.swift */,
-				C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */,
-				C199CEB42BFDCAAD00A4F491 /* ViewController.swift */,
-				C199CEB62BFDCAAD00A4F491 /* Main.storyboard */,
-				C199CEB92BFDCAAF00A4F491 /* Assets.xcassets */,
-				C199CEBB2BFDCAAF00A4F491 /* LaunchScreen.storyboard */,
 				C199CEBE2BFDCAAF00A4F491 /* Info.plist */,
+				C1E824492C02F1A70043B706 /* app-screen-navigator */,
+				C1E824482C02F1730043B706 /* app-launch */,
+				C134FA2F2C02EFC5001D8A69 /* app-configuration */,
+				C19C57CE2BFDF88800A76B80 /* app-network */,
+				C19C57C22BFDD01800A76B80 /* app-modules */,
+				C19C57C02BFDCFD000A76B80 /* app-icons */,
 			);
 			path = "EDCR Supervisor";
+			sourceTree = "<group>";
+		};
+		C19C57C02BFDCFD000A76B80 /* app-icons */ = {
+			isa = PBXGroup;
+			children = (
+				C199CEB92BFDCAAF00A4F491 /* Assets.xcassets */,
+			);
+			path = "app-icons";
+			sourceTree = "<group>";
+		};
+		C19C57C22BFDD01800A76B80 /* app-modules */ = {
+			isa = PBXGroup;
+			children = (
+				C19C57C32BFDD02C00A76B80 /* auth */,
+			);
+			path = "app-modules";
+			sourceTree = "<group>";
+		};
+		C19C57C32BFDD02C00A76B80 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				C19C57CB2BFDEFFD00A76B80 /* Entity */,
+				C19C57C42BFDEEC000A76B80 /* View */,
+				C19C57B62BFDCF8700A76B80 /* AuthModuleContract.swift */,
+				C19C57B72BFDCF8700A76B80 /* AuthModulePresenter.swift */,
+				C19C57B82BFDCF8700A76B80 /* AuthModuleRouter.swift */,
+				C19C57BA2BFDCF8700A76B80 /* AuthModuleInteractor.swift */,
+				C19C57D32BFDFC9B00A76B80 /* AuthService.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		C19C57C42BFDEEC000A76B80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C19C57C72BFDEF8200A76B80 /* AuthViewController.swift */,
+				C19C57C82BFDEF8200A76B80 /* AuthViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C19C57CB2BFDEFFD00A76B80 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C19C57CC2BFDF02200A76B80 /* UserModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C19C57CE2BFDF88800A76B80 /* app-network */ = {
+			isa = PBXGroup;
+			children = (
+				C19C57CF2BFDF8DB00A76B80 /* NetworkManager.swift */,
+				C19C57D12BFDFA5300A76B80 /* NetworkService.swift */,
+			);
+			path = "app-network";
+			sourceTree = "<group>";
+		};
+		C1E824482C02F1730043B706 /* app-launch */ = {
+			isa = PBXGroup;
+			children = (
+				C199CEBB2BFDCAAF00A4F491 /* LaunchScreen.storyboard */,
+			);
+			path = "app-launch";
+			sourceTree = "<group>";
+		};
+		C1E824492C02F1A70043B706 /* app-screen-navigator */ = {
+			isa = PBXGroup;
+			children = (
+				C15A313F2BFF58AD0033AC49 /* ScreenNavigator.swift */,
+			);
+			path = "app-screen-navigator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C199CEC12BFDCAAF00A4F491 /* Build configuration list for PBXNativeTarget "EDCR Supervisor" */;
 			buildPhases = (
+				ACA3B71280FAD26E9AB6AD64 /* [CP] Check Pods Manifest.lock */,
 				C199CEA92BFDCAAD00A4F491 /* Sources */,
 				C199CEAA2BFDCAAD00A4F491 /* Frameworks */,
 				C199CEAB2BFDCAAD00A4F491 /* Resources */,
+				AAA7917E65DD9C2680533DB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +250,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19C57CA2BFDEF8200A76B80 /* AuthViewController.xib in Resources */,
 				C199CEBD2BFDCAAF00A4F491 /* LaunchScreen.storyboard in Resources */,
 				C199CEBA2BFDCAAF00A4F491 /* Assets.xcassets in Resources */,
-				C199CEB82BFDCAAD00A4F491 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAA7917E65DD9C2680533DB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EDCR Supervisor/Pods-EDCR Supervisor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EDCR Supervisor/Pods-EDCR Supervisor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EDCR Supervisor/Pods-EDCR Supervisor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACA3B71280FAD26E9AB6AD64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EDCR Supervisor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C199CEA92BFDCAAD00A4F491 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C199CEB52BFDCAAD00A4F491 /* ViewController.swift in Sources */,
+				C19C57BF2BFDCF8700A76B80 /* AuthModuleInteractor.swift in Sources */,
+				C19C57BD2BFDCF8700A76B80 /* AuthModuleRouter.swift in Sources */,
+				C19C57BC2BFDCF8700A76B80 /* AuthModulePresenter.swift in Sources */,
+				C19C57D02BFDF8DB00A76B80 /* NetworkManager.swift in Sources */,
+				C19C57BB2BFDCF8700A76B80 /* AuthModuleContract.swift in Sources */,
+				C15A31402BFF58AD0033AC49 /* ScreenNavigator.swift in Sources */,
+				C19C57D42BFDFC9B00A76B80 /* AuthService.swift in Sources */,
 				C199CEB12BFDCAAD00A4F491 /* AppDelegate.swift in Sources */,
 				C199CEB32BFDCAAD00A4F491 /* SceneDelegate.swift in Sources */,
+				C19C57C92BFDEF8200A76B80 /* AuthViewController.swift in Sources */,
+				C19C57CD2BFDF02200A76B80 /* UserModel.swift in Sources */,
+				C19C57D22BFDFA5300A76B80 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C199CEB62BFDCAAD00A4F491 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C199CEB72BFDCAAD00A4F491 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C199CEBB2BFDCAAF00A4F491 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +450,7 @@
 		};
 		C199CEC22BFDCAAF00A4F491 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA06F9B7A5B7C62B9030DFC /* Pods-EDCR Supervisor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +461,7 @@
 				INFOPLIST_FILE = "EDCR Supervisor/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +479,7 @@
 		};
 		C199CEC32BFDCAAF00A4F491 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 406CCC0A995413FEB57E2B43 /* Pods-EDCR Supervisor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +490,7 @@
 				INFOPLIST_FILE = "EDCR Supervisor/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
