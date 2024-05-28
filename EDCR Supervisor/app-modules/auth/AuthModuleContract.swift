@@ -48,5 +48,5 @@ protocol InteractorToPresenterAuthModuleProtocol {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterAuthModuleProtocol : AnyObject {
-   // static func navigateToLoginView()-> AuthViewController
+   func navigateToDashboard(from: PresenterToViewAuthModuleProtocol, userModel: UserModel)
 }

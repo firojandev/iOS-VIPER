@@ -10,27 +10,14 @@ import Foundation
 import UIKit
 
 class AuthModuleRouter: PresenterToRouterAuthModuleProtocol {
-    
-//    static func navigateToLoginView() -> AuthViewController {
-//
-//        let view = mainstoryboard.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
-//
-//        var presenter : ViewToPresenterAuthModuleProtocol & InteractorToPresenterAuthModuleProtocol = AuthModulePresenter()
-//        var interactor : PresenterToInteractorAuthModuleProtocol = AuthModuleInteractor()
-//                let router : PresenterToRouterAuthModuleProtocol = AuthModuleRouter()
-//
-//        view.presenter = presenter
-//        presenter.view = view
-//        presenter.router = router
-//        presenter.interactor = interactor
-//        interactor.presenter = presenter
-//
-//        return view
-//    }
-//
-//
-//    static var mainstoryboard: UIStoryboard{
-//           return UIStoryboard(name:"Main",bundle: Bundle.main)
-//       }
+   
+    func navigateToDashboard(from view: PresenterToViewAuthModuleProtocol, userModel: UserModel) {
+        
+        guard let view = view as? UIViewController else  {  return  }
+        
+        let dashboardRouter = DashboardRouter()
+        let dashboardViewController = dashboardRouter.createDashboardScreen()
+        view.navigationController?.pushViewController(dashboardViewController, animated: true)
+    }
     
 }

@@ -29,16 +29,18 @@ class AuthModulePresenter: ViewToPresenterAuthModuleProtocol {
 extension AuthModulePresenter: InteractorToPresenterAuthModuleProtocol {
     func didSuccessUserLogin(response: UserModel) {
         self.userModel = response
+       
         print(response)
-        view?.didLoginSuccess(message: "Welcome \(self.userModel?.empName)")
+        
+        router?.navigateToDashboard(from:view!,userModel: userModel!)
+        
+        //view?.didLoginSuccess(message: "Welcome \(self.userModel?.empName)")
         
     }
     
     func didFailedUserLogin(error: String) {
-        view?.didLoginSuccess(message: error)
+        view?.didLoginFailed(error:error)
+        
     }
-    
-    
 
-    
 }
