@@ -29,6 +29,7 @@
 		C19C57D02BFDF8DB00A76B80 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57CF2BFDF8DB00A76B80 /* NetworkManager.swift */; };
 		C19C57D22BFDFA5300A76B80 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D12BFDFA5300A76B80 /* NetworkService.swift */; };
 		C19C57D42BFDFC9B00A76B80 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D32BFDFC9B00A76B80 /* AuthService.swift */; };
+		C1C10A1E2C05E5EB00A1E982 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */; };
 		F48E6E481B1720D17981E00A /* Pods_EDCR_Supervisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEB85F8A34FB651D8E63F28 /* Pods_EDCR_Supervisor.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		C19C57CF2BFDF8DB00A76B80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C19C57D12BFDFA5300A76B80 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C19C57D32BFDFC9B00A76B80 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		C19C57C22BFDD01800A76B80 /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
+				C1C10A1B2C05E5C700A1E982 /* common */,
 				C103BCEE2C05A5F200F1F5D7 /* dashboard */,
 				C19C57C32BFDD02C00A76B80 /* auth */,
 			);
@@ -225,6 +228,22 @@
 				C19C57D12BFDFA5300A76B80 /* NetworkService.swift */,
 			);
 			path = "app-network";
+			sourceTree = "<group>";
+		};
+		C1C10A1B2C05E5C700A1E982 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C1C10A1C2C05E5D100A1E982 /* alert */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C1C10A1C2C05E5D100A1E982 /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */,
+			);
+			path = alert;
 			sourceTree = "<group>";
 		};
 		C1E824482C02F1730043B706 /* app-launch */ = {
@@ -374,6 +393,7 @@
 				C199CEB32BFDCAAD00A4F491 /* SceneDelegate.swift in Sources */,
 				C19C57C92BFDEF8200A76B80 /* AuthViewController.swift in Sources */,
 				C103BCF42C05AA7C00F1F5D7 /* DashboardPresenter.swift in Sources */,
+				C1C10A1E2C05E5EB00A1E982 /* AlertPresenter.swift in Sources */,
 				C19C57CD2BFDF02200A76B80 /* UserModel.swift in Sources */,
 				C19C57D22BFDFA5300A76B80 /* NetworkService.swift in Sources */,
 				C103BCFB2C05AE0800F1F5D7 /* DashboardViewController.swift in Sources */,
