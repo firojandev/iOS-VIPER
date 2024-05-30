@@ -17,23 +17,41 @@ class AuthModuleInteractor {
 
 extension AuthModuleInteractor: PresenterToInteractorAuthModuleProtocol {
     
-    func login(userId:String,userPassword password:String) {
-        networkManager.getLogin(userId: userId, password: password) {userModel, error in
-                   if let error = error {
-                       self.didFailedLogin(error: error.localizedDescription)
-                   } else {
-                       if let userModel = userModel {
-                           self.didSuccessLogin(response: userModel)
-                       }
-                   }
-               }
+    func checkDidLoggedIn() {
+        let allUsers = StorageManager.shared.getAllObjects(UserModel.self)
+        print("total Users: \(allUsers.count)")
+        
+        if let loggedUser = allUsers.first {
+            presenter?.checkDidAlreadyLoggedIn(user: loggedUser)
+        }
+        
     }
     
-
+    
+    func login(userId:String,userPassword password:String) {
+        networkManager.getLogin(userId: userId, password: password) {userModel, error in
+            if let error = error {
+                self.didFailedLogin(error: error.localizedDescription)
+            } else {
+                if let userModel = userModel {
+                    self.didSuccessLogin(response: userModel)
+                }
+            }
+        }
+    }
+    
+    
 }
 
 extension AuthModuleInteractor: UserLoginProtocal {
     func didSuccessLogin(response: UserModel) {
+        
+        //Clear already saved user model
+        StorageManager.shared.deleteUserModel()
+        
+        //Saving this user model to the db
+        StorageManager.shared.saveObject(response)
+        
         presenter?.didSuccessUserLogin(response: response)
     }
     

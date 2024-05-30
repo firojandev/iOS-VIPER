@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class AuthModuleRouter: PresenterToRouterAuthModuleProtocol {
-   
+    
+    weak var viewController: UIViewController?
+    
 //    func navigateToDashboard(from view: PresenterToViewAuthModuleProtocol, userModel: UserModel) {
 //
 //        guard let view = view as? UIViewController else  {  return  }
@@ -20,8 +22,21 @@ class AuthModuleRouter: PresenterToRouterAuthModuleProtocol {
 //        view.navigationController?.pushViewController(dashboardViewController, animated: true)
 //    }
     
-    weak var viewController: UIViewController?
-    
+    func createAuthScreen() -> UIViewController {
+        var view: UIViewController & PresenterToViewAuthModuleProtocol = AuthViewController()
+        var presenter: ViewToPresenterAuthModuleProtocol & InteractorToPresenterAuthModuleProtocol = AuthModulePresenter()
+        var interactor: PresenterToInteractorAuthModuleProtocol = AuthModuleInteractor()
+        var router: PresenterToRouterAuthModuleProtocol = AuthModuleRouter()
+        
+        view.presenter = presenter
+        presenter.view = view
+        presenter.interactor = interactor
+        presenter.router = router
+        interactor.presenter = presenter
+        
+        return view
+    }
+   
     func navigateToDashboard(from view: PresenterToViewAuthModuleProtocol, userModel: UserModel) {
         
         //As we wish to replace the login UI with dashboard UI as root view

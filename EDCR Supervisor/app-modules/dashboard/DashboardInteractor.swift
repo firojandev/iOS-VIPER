@@ -12,6 +12,18 @@ class DashboardInteractor {
 }
 
 extension DashboardInteractor: DashboardPresenterToInteractor {
+    
+    func didTapLogoutButton() {
+       
+        //Logout
+        //Clear already saved user model
+        StorageManager.shared.deleteUserModel()
+        
+        //Navigate ot the login page now
+        presenter?.didLogout()
+
+    }
+    
     func fetchCurrentDate() {
         let currentDate = Date()
         presenter?.didFetchDate(currentDate)

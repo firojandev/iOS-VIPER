@@ -14,6 +14,7 @@ protocol DashboardViewToPresenter: AnyObject {
     var router: DashboardPresenterToRouter? {get set}
     
     func viewDidLoad()
+    func didTappedLogoutButton()
 }
 
 protocol DashboardPresenterToView: AnyObject {
@@ -26,10 +27,13 @@ protocol DashboardPresenterToInteractor: AnyObject {
     var presenter:DashboardInteractorToPresenter? {get set}
     
     func fetchCurrentDate()
+    
+    func didTapLogoutButton()
 }
 
 protocol DashboardInteractorToPresenter: AnyObject {
     func didFetchDate(_ date: Date)
+    func didLogout()
 }
 
 protocol DashboardPresenterToRouter: AnyObject {
