@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 // MARK: View Output (Presenter -> View)
 protocol PresenterToViewAuthModuleProtocol: AnyObject {
@@ -26,6 +26,8 @@ protocol ViewToPresenterAuthModuleProtocol: AnyObject {
     var interactor: PresenterToInteractorAuthModuleProtocol? { get set }
     var router: PresenterToRouterAuthModuleProtocol? { get set }
     
+    func viewDidLoad()
+    
     func didPerformedLoginOperation(userId:String,userPassword:String)
     
 }
@@ -35,12 +37,14 @@ protocol ViewToPresenterAuthModuleProtocol: AnyObject {
 protocol PresenterToInteractorAuthModuleProtocol {
     
     var presenter: InteractorToPresenterAuthModuleProtocol? { get set }
+    func checkDidLoggedIn()
     func login(userId:String, userPassword:String)
 }
 
 
 // MARK: Interactor Output (Interactor -> Presenter)
 protocol InteractorToPresenterAuthModuleProtocol {
+    func checkDidAlreadyLoggedIn(user userModel:UserModel)
     func didSuccessUserLogin(response: UserModel)
     func didFailedUserLogin(error: String)
 }
@@ -48,5 +52,6 @@ protocol InteractorToPresenterAuthModuleProtocol {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterAuthModuleProtocol : AnyObject {
-   // static func navigateToLoginView()-> AuthViewController
+   func createAuthScreen() -> UIViewController
+   func navigateToDashboard(from: PresenterToViewAuthModuleProtocol, userModel: UserModel)
 }

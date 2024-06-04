@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C15A31402BFF58AD0033AC49 /* ScreenNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A313F2BFF58AD0033AC49 /* ScreenNavigator.swift */; };
+		C103BCF02C05A65A00F1F5D7 /* DashboardContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103BCEF2C05A65A00F1F5D7 /* DashboardContract.swift */; };
+		C103BCF42C05AA7C00F1F5D7 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103BCF32C05AA7C00F1F5D7 /* DashboardPresenter.swift */; };
+		C103BCF62C05AA9200F1F5D7 /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103BCF52C05AA9200F1F5D7 /* DashboardInteractor.swift */; };
+		C103BCF82C05AAB000F1F5D7 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103BCF72C05AAB000F1F5D7 /* DashboardRouter.swift */; };
+		C103BCFB2C05AE0800F1F5D7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103BCF92C05AE0800F1F5D7 /* DashboardViewController.swift */; };
+		C103BCFC2C05AE0800F1F5D7 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C103BCFA2C05AE0800F1F5D7 /* DashboardViewController.xib */; };
+		C103BCFF2C05B77900F1F5D7 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103BCFE2C05B77900F1F5D7 /* Date+Formatting.swift */; };
 		C199CEB12BFDCAAD00A4F491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CEB02BFDCAAD00A4F491 /* AppDelegate.swift */; };
 		C199CEB32BFDCAAD00A4F491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */; };
 		C199CEBA2BFDCAAF00A4F491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C199CEB92BFDCAAF00A4F491 /* Assets.xcassets */; };
@@ -22,6 +28,11 @@
 		C19C57D02BFDF8DB00A76B80 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57CF2BFDF8DB00A76B80 /* NetworkManager.swift */; };
 		C19C57D22BFDFA5300A76B80 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D12BFDFA5300A76B80 /* NetworkService.swift */; };
 		C19C57D42BFDFC9B00A76B80 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D32BFDFC9B00A76B80 /* AuthService.swift */; };
+		C1C10A1E2C05E5EB00A1E982 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */; };
+		C1DA91092C0EC3810027154F /* DashCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DA91082C0EC3810027154F /* DashCardView.xib */; };
+		C1DA910B2C0EC3A60027154F /* DashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA910A2C0EC3A60027154F /* DashCardView.swift */; };
+		C1DA910D2C0EC9550027154F /* FixedSizeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA910C2C0EC9550027154F /* FixedSizeBarButtonItem.swift */; };
+		C1E20A2A2C07361200D45957 /* StoageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E20A292C07361200D45957 /* StoageManager.swift */; };
 		F48E6E481B1720D17981E00A /* Pods_EDCR_Supervisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEB85F8A34FB651D8E63F28 /* Pods_EDCR_Supervisor.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +40,13 @@
 		406CCC0A995413FEB57E2B43 /* Pods-EDCR Supervisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDCR Supervisor.release.xcconfig"; path = "Target Support Files/Pods-EDCR Supervisor/Pods-EDCR Supervisor.release.xcconfig"; sourceTree = "<group>"; };
 		5DEB85F8A34FB651D8E63F28 /* Pods_EDCR_Supervisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDCR_Supervisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA06F9B7A5B7C62B9030DFC /* Pods-EDCR Supervisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDCR Supervisor.debug.xcconfig"; path = "Target Support Files/Pods-EDCR Supervisor/Pods-EDCR Supervisor.debug.xcconfig"; sourceTree = "<group>"; };
-		C15A313F2BFF58AD0033AC49 /* ScreenNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenNavigator.swift; sourceTree = "<group>"; };
+		C103BCEF2C05A65A00F1F5D7 /* DashboardContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContract.swift; sourceTree = "<group>"; };
+		C103BCF32C05AA7C00F1F5D7 /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		C103BCF52C05AA9200F1F5D7 /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		C103BCF72C05AAB000F1F5D7 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		C103BCF92C05AE0800F1F5D7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C103BCFA2C05AE0800F1F5D7 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		C103BCFE2C05B77900F1F5D7 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
 		C199CEAD2BFDCAAD00A4F491 /* EDCR Supervisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EDCR Supervisor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C199CEB02BFDCAAD00A4F491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +63,11 @@
 		C19C57CF2BFDF8DB00A76B80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C19C57D12BFDFA5300A76B80 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C19C57D32BFDFC9B00A76B80 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		C1DA91082C0EC3810027154F /* DashCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashCardView.xib; sourceTree = "<group>"; };
+		C1DA910A2C0EC3A60027154F /* DashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCardView.swift; sourceTree = "<group>"; };
+		C1DA910C2C0EC9550027154F /* FixedSizeBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSizeBarButtonItem.swift; sourceTree = "<group>"; };
+		C1E20A292C07361200D45957 /* StoageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +99,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C103BCEE2C05A5F200F1F5D7 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C103BCF22C05A70700F1F5D7 /* Entity */,
+				C103BCF12C05A70100F1F5D7 /* View */,
+				C103BCEF2C05A65A00F1F5D7 /* DashboardContract.swift */,
+				C103BCF32C05AA7C00F1F5D7 /* DashboardPresenter.swift */,
+				C103BCF52C05AA9200F1F5D7 /* DashboardInteractor.swift */,
+				C103BCF72C05AAB000F1F5D7 /* DashboardRouter.swift */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		C103BCF12C05A70100F1F5D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C103BCF92C05AE0800F1F5D7 /* DashboardViewController.swift */,
+				C103BCFA2C05AE0800F1F5D7 /* DashboardViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C103BCF22C05A70700F1F5D7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C103BCFD2C05B76300F1F5D7 /* app-utils */ = {
+			isa = PBXGroup;
+			children = (
+				C103BCFE2C05B77900F1F5D7 /* Date+Formatting.swift */,
+			);
+			path = "app-utils";
+			sourceTree = "<group>";
+		};
 		C134FA2F2C02EFC5001D8A69 /* app-configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +143,15 @@
 				C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */,
 			);
 			path = "app-configuration";
+			sourceTree = "<group>";
+		};
+		C17D81F02C0C658A00EF1930 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA91072C0EC3460027154F /* cardviews */,
+				C1DA910C2C0EC9550027154F /* FixedSizeBarButtonItem.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 		C199CEA42BFDCAAD00A4F491 = {
@@ -107,8 +175,8 @@
 		C199CEAF2BFDCAAD00A4F491 /* EDCR Supervisor */ = {
 			isa = PBXGroup;
 			children = (
+				C103BCFD2C05B76300F1F5D7 /* app-utils */,
 				C199CEBE2BFDCAAF00A4F491 /* Info.plist */,
-				C1E824492C02F1A70043B706 /* app-screen-navigator */,
 				C1E824482C02F1730043B706 /* app-launch */,
 				C134FA2F2C02EFC5001D8A69 /* app-configuration */,
 				C19C57CE2BFDF88800A76B80 /* app-network */,
@@ -129,6 +197,8 @@
 		C19C57C22BFDD01800A76B80 /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
+				C1C10A1B2C05E5C700A1E982 /* common */,
+				C103BCEE2C05A5F200F1F5D7 /* dashboard */,
 				C19C57C32BFDD02C00A76B80 /* auth */,
 			);
 			path = "app-modules";
@@ -174,20 +244,47 @@
 			path = "app-network";
 			sourceTree = "<group>";
 		};
+		C1C10A1B2C05E5C700A1E982 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C17D81F02C0C658A00EF1930 /* ui */,
+				C1E20A282C07351900D45957 /* LocalStoarge */,
+				C1C10A1C2C05E5D100A1E982 /* alert */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C1C10A1C2C05E5D100A1E982 /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */,
+			);
+			path = alert;
+			sourceTree = "<group>";
+		};
+		C1DA91072C0EC3460027154F /* cardviews */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA91082C0EC3810027154F /* DashCardView.xib */,
+				C1DA910A2C0EC3A60027154F /* DashCardView.swift */,
+			);
+			path = cardviews;
+			sourceTree = "<group>";
+		};
+		C1E20A282C07351900D45957 /* LocalStoarge */ = {
+			isa = PBXGroup;
+			children = (
+				C1E20A292C07361200D45957 /* StoageManager.swift */,
+			);
+			path = LocalStoarge;
+			sourceTree = "<group>";
+		};
 		C1E824482C02F1730043B706 /* app-launch */ = {
 			isa = PBXGroup;
 			children = (
 				C199CEBB2BFDCAAF00A4F491 /* LaunchScreen.storyboard */,
 			);
 			path = "app-launch";
-			sourceTree = "<group>";
-		};
-		C1E824492C02F1A70043B706 /* app-screen-navigator */ = {
-			isa = PBXGroup;
-			children = (
-				C15A313F2BFF58AD0033AC49 /* ScreenNavigator.swift */,
-			);
-			path = "app-screen-navigator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19C57CA2BFDEF8200A76B80 /* AuthViewController.xib in Resources */,
+				C1DA91092C0EC3810027154F /* DashCardView.xib in Resources */,
 				C199CEBD2BFDCAAF00A4F491 /* LaunchScreen.storyboard in Resources */,
 				C199CEBA2BFDCAAF00A4F491 /* Assets.xcassets in Resources */,
+				C103BCFC2C05AE0800F1F5D7 /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,16 +406,25 @@
 			files = (
 				C19C57BF2BFDCF8700A76B80 /* AuthModuleInteractor.swift in Sources */,
 				C19C57BD2BFDCF8700A76B80 /* AuthModuleRouter.swift in Sources */,
+				C1DA910B2C0EC3A60027154F /* DashCardView.swift in Sources */,
+				C103BCFF2C05B77900F1F5D7 /* Date+Formatting.swift in Sources */,
 				C19C57BC2BFDCF8700A76B80 /* AuthModulePresenter.swift in Sources */,
+				C103BCF02C05A65A00F1F5D7 /* DashboardContract.swift in Sources */,
 				C19C57D02BFDF8DB00A76B80 /* NetworkManager.swift in Sources */,
+				C103BCF62C05AA9200F1F5D7 /* DashboardInteractor.swift in Sources */,
 				C19C57BB2BFDCF8700A76B80 /* AuthModuleContract.swift in Sources */,
-				C15A31402BFF58AD0033AC49 /* ScreenNavigator.swift in Sources */,
 				C19C57D42BFDFC9B00A76B80 /* AuthService.swift in Sources */,
+				C103BCF82C05AAB000F1F5D7 /* DashboardRouter.swift in Sources */,
 				C199CEB12BFDCAAD00A4F491 /* AppDelegate.swift in Sources */,
 				C199CEB32BFDCAAD00A4F491 /* SceneDelegate.swift in Sources */,
 				C19C57C92BFDEF8200A76B80 /* AuthViewController.swift in Sources */,
+				C103BCF42C05AA7C00F1F5D7 /* DashboardPresenter.swift in Sources */,
+				C1DA910D2C0EC9550027154F /* FixedSizeBarButtonItem.swift in Sources */,
+				C1C10A1E2C05E5EB00A1E982 /* AlertPresenter.swift in Sources */,
+				C1E20A2A2C07361200D45957 /* StoageManager.swift in Sources */,
 				C19C57CD2BFDF02200A76B80 /* UserModel.swift in Sources */,
 				C19C57D22BFDFA5300A76B80 /* NetworkService.swift in Sources */,
+				C103BCFB2C05AE0800F1F5D7 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

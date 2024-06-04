@@ -24,7 +24,7 @@ class LoginService: LoginServiceProtocol {
     
     func getLogin(userId: String, password: String,completion: @escaping ((UserModel?, Error?) -> ())) {
         
-        let url = NetworkHelper.shared.requestUrl(url: "/login?UserID=\(userId)&Password=\(password)&Token=ABCD")
+        let url = NetworkHelper.shared.requestUrl(url: "login?UserID=\(userId)&Password=\(password)&Token=ABCD")
         
         NetworkService.shared.request(type: UserModel.self,url: url,method: .get) {
             response in

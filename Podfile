@@ -9,5 +9,6 @@ target 'EDCR Supervisor' do
   pod "Kingfisher"
   pod 'Alamofire'
   pod "IQKeyboardManagerSwift"
+  pod 'RealmSwift', '~> 10.49.3'
 
 end

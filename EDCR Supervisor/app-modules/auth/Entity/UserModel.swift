@@ -5,16 +5,17 @@
 //  Created by Md Altaf Hoshain Firoj on 22/5/24.
 //
 
-import Foundation
+import RealmSwift
 
-struct UserModel: Codable {
-    let status:String
-    let message:String
-    let designation:String
-    let empName:String
-    let locCode:String
-    let locName:String
-    let depotName:String
+class UserModel: Object,Codable {
+    @Persisted(primaryKey: true) var userId: String = UUID().uuidString
+    @Persisted var status:String = ""
+    @Persisted var message:String = ""
+    @Persisted var designation:String = ""
+    @Persisted var empName:String = ""
+    @Persisted var locCode:String = ""
+    @Persisted var locName:String = ""
+    @Persisted var depotName:String = ""
     
     enum CodingKeys:String,CodingKey {
         case status = "Status"
@@ -24,6 +25,9 @@ struct UserModel: Codable {
         case locCode = "LocCode"
         case locName = "LocName"
         case depotName = "DepotName"
+    }
+    
+    override init() {
     }
     
     init(status: String, message: String, designation: String, empName: String, locCode: String, locName: String, depotName: String) {
