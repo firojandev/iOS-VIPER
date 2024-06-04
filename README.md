@@ -2,6 +2,9 @@ Build app with VIPER architecture in swift & through interface builder . Here th
 
 This project is contain two module Login & Dashboard with View,Interactor,Presenter,Entity and Router (VIPER) architecture
 
+Also is integrated the Rest API call using Alamofire
+And the Realm database 
+
 ![Login UI](https://github.com/firojandev/iOS-VIPER/blob/main/login.png)
 
 ![Dashboard Incompleted UI](https://github.com/firojandev/iOS-VIPER/blob/main/dashboard.png)
