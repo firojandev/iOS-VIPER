@@ -29,6 +29,9 @@
 		C19C57D22BFDFA5300A76B80 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D12BFDFA5300A76B80 /* NetworkService.swift */; };
 		C19C57D42BFDFC9B00A76B80 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C57D32BFDFC9B00A76B80 /* AuthService.swift */; };
 		C1C10A1E2C05E5EB00A1E982 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */; };
+		C1DA91092C0EC3810027154F /* DashCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DA91082C0EC3810027154F /* DashCardView.xib */; };
+		C1DA910B2C0EC3A60027154F /* DashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA910A2C0EC3A60027154F /* DashCardView.swift */; };
+		C1DA910D2C0EC9550027154F /* FixedSizeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA910C2C0EC9550027154F /* FixedSizeBarButtonItem.swift */; };
 		C1E20A2A2C07361200D45957 /* StoageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E20A292C07361200D45957 /* StoageManager.swift */; };
 		F48E6E481B1720D17981E00A /* Pods_EDCR_Supervisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEB85F8A34FB651D8E63F28 /* Pods_EDCR_Supervisor.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		C19C57D12BFDFA5300A76B80 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C19C57D32BFDFC9B00A76B80 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		C1DA91082C0EC3810027154F /* DashCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashCardView.xib; sourceTree = "<group>"; };
+		C1DA910A2C0EC3A60027154F /* DashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCardView.swift; sourceTree = "<group>"; };
+		C1DA910C2C0EC9550027154F /* FixedSizeBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSizeBarButtonItem.swift; sourceTree = "<group>"; };
 		C1E20A292C07361200D45957 /* StoageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +143,15 @@
 				C199CEB22BFDCAAD00A4F491 /* SceneDelegate.swift */,
 			);
 			path = "app-configuration";
+			sourceTree = "<group>";
+		};
+		C17D81F02C0C658A00EF1930 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA91072C0EC3460027154F /* cardviews */,
+				C1DA910C2C0EC9550027154F /* FixedSizeBarButtonItem.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 		C199CEA42BFDCAAD00A4F491 = {
@@ -232,6 +247,7 @@
 		C1C10A1B2C05E5C700A1E982 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				C17D81F02C0C658A00EF1930 /* ui */,
 				C1E20A282C07351900D45957 /* LocalStoarge */,
 				C1C10A1C2C05E5D100A1E982 /* alert */,
 			);
@@ -244,6 +260,15 @@
 				C1C10A1D2C05E5EB00A1E982 /* AlertPresenter.swift */,
 			);
 			path = alert;
+			sourceTree = "<group>";
+		};
+		C1DA91072C0EC3460027154F /* cardviews */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA91082C0EC3810027154F /* DashCardView.xib */,
+				C1DA910A2C0EC3A60027154F /* DashCardView.swift */,
+			);
+			path = cardviews;
 			sourceTree = "<group>";
 		};
 		C1E20A282C07351900D45957 /* LocalStoarge */ = {
@@ -323,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19C57CA2BFDEF8200A76B80 /* AuthViewController.xib in Resources */,
+				C1DA91092C0EC3810027154F /* DashCardView.xib in Resources */,
 				C199CEBD2BFDCAAF00A4F491 /* LaunchScreen.storyboard in Resources */,
 				C199CEBA2BFDCAAF00A4F491 /* Assets.xcassets in Resources */,
 				C103BCFC2C05AE0800F1F5D7 /* DashboardViewController.xib in Resources */,
@@ -380,6 +406,7 @@
 			files = (
 				C19C57BF2BFDCF8700A76B80 /* AuthModuleInteractor.swift in Sources */,
 				C19C57BD2BFDCF8700A76B80 /* AuthModuleRouter.swift in Sources */,
+				C1DA910B2C0EC3A60027154F /* DashCardView.swift in Sources */,
 				C103BCFF2C05B77900F1F5D7 /* Date+Formatting.swift in Sources */,
 				C19C57BC2BFDCF8700A76B80 /* AuthModulePresenter.swift in Sources */,
 				C103BCF02C05A65A00F1F5D7 /* DashboardContract.swift in Sources */,
@@ -392,6 +419,7 @@
 				C199CEB32BFDCAAD00A4F491 /* SceneDelegate.swift in Sources */,
 				C19C57C92BFDEF8200A76B80 /* AuthViewController.swift in Sources */,
 				C103BCF42C05AA7C00F1F5D7 /* DashboardPresenter.swift in Sources */,
+				C1DA910D2C0EC9550027154F /* FixedSizeBarButtonItem.swift in Sources */,
 				C1C10A1E2C05E5EB00A1E982 /* AlertPresenter.swift in Sources */,
 				C1E20A2A2C07361200D45957 /* StoageManager.swift in Sources */,
 				C19C57CD2BFDF02200A76B80 /* UserModel.swift in Sources */,

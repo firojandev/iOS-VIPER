@@ -31,12 +31,19 @@ class DashboardViewController: UIViewController {
             navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
             navigationBar.tintColor = UIColor.blue
         }
-        let logoutButtonItem = UIBarButtonItem(image:UIImage(named:"LogoutIcon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(logoutButtonTapped))
         
-        let notificationButtonItem = UIBarButtonItem(image:UIImage(named:"NotificationIcon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(notificationButtonTapped))
-        let settingButtonItem = UIBarButtonItem(image:UIImage(named:"SettingsIcon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(settingButtonTapped))
-       
-        let menuBarButtonItem = UIBarButtonItem(image:UIImage(named:"MenuIcon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(menuButtonTapped))
+        let logoutImage = UIImage(named: "LogoutIcon")
+        let logoutButtonItem = FixedSizeBarButtonItem(image: logoutImage, width: 24, height: 24, target: self, action: #selector(logoutButtonTapped))
+        
+        let NotificationImage = UIImage(named: "NotificationIcon")
+        let notificationButtonItem = FixedSizeBarButtonItem(image: NotificationImage, width: 24, height: 24, target: self, action: #selector(notificationButtonTapped))
+        
+        let SettingsImage = UIImage(named: "SettingsIcon")
+        let settingButtonItem = FixedSizeBarButtonItem(image: SettingsImage, width: 24, height: 24, target: self, action: #selector(settingButtonTapped))
+        
+        let MenuIconImage = UIImage(named: "MenuIcon")
+        let menuBarButtonItem = FixedSizeBarButtonItem(image: MenuIconImage, width: 24, height: 24, target: self, action: #selector(menuButtonTapped))
+               
         
         self.navigationItem.rightBarButtonItems = [menuBarButtonItem,settingButtonItem,notificationButtonItem,logoutButtonItem,]
     }

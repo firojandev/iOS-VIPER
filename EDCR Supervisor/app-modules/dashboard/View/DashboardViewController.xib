@@ -54,12 +54,22 @@
                                 <constraint firstItem="gwx-h9-kiH" firstAttribute="leading" secondItem="9jd-86-G1C" secondAttribute="leading" constant="8" id="xoY-ip-QfM"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hY5-cz-ooK" customClass="DashCardView" customModule="EDCR_Supervisor" customModuleProvider="target">
+                            <rect key="frame" x="10" y="90" width="300" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="7GW-ow-JEO"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <constraints>
                         <constraint firstItem="9jd-86-G1C" firstAttribute="leading" secondItem="Gdb-BV-AyA" secondAttribute="leading" id="6nH-ft-N2K"/>
                         <constraint firstAttribute="trailing" secondItem="9jd-86-G1C" secondAttribute="trailing" id="Vwe-hB-KPI"/>
                         <constraint firstItem="9jd-86-G1C" firstAttribute="top" secondItem="Gdb-BV-AyA" secondAttribute="top" id="rBR-jD-HIg"/>
+                        <constraint firstItem="hY5-cz-ooK" firstAttribute="top" secondItem="Gdb-BV-AyA" secondAttribute="top" constant="90" id="sd4-Q9-QXk"/>
+                        <constraint firstAttribute="trailing" secondItem="hY5-cz-ooK" secondAttribute="trailing" constant="10" id="zFK-gQ-EpS"/>
+                        <constraint firstItem="hY5-cz-ooK" firstAttribute="leading" secondItem="Gdb-BV-AyA" secondAttribute="leading" constant="10" id="zIV-kJ-HjR"/>
                     </constraints>
                 </view>
             </subviews>
