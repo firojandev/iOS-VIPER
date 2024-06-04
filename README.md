@@ -2,5 +2,5 @@ Build app with VIPER architecture in swift & through interface builder . Here th
 
 This project is contain two module Login & Dashboard with View,Interactor,Presenter,Entity and Router (VIPER) architecture
 
-https://github.com/github/iOS-VIPER/login.png
-https://github.com/github/iOS-VIPER/dashboard.png 
+https://github.com/firojandev/iOS-VIPER/login.png
+https://github.com/firojandev/iOS-VIPER/dashboard.png 
